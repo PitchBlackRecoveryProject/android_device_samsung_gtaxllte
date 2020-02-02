@@ -5,7 +5,7 @@ jobs:
       # new standalone docker container
       - image: fr3akyphantom/droid-builder:latest
     environment:
-      MANIFEST_BRANCH: 'android-9.0'
+      MANIFEST_BRANCH: 'twrp-6.0'
       # PBRP_BRANCH: optional, if not default 'android-9.0', define other bootable_recovery branch
       VERSION: '2.9.0' # as of now, the current PBRP version
       VENDOR: 'samsung'
@@ -31,8 +31,7 @@ workflows:
   build_and_test:
     jobs:
       - build:
-        # if running CircleCI from non-default branch, add 'filters' key under 'build' key, and uncomment
-        # filters:
-        #   branches:
-        #     only: 'non-default branch name'
+          filters:
+            branches:
+              only: 'android-6.0'
           context: org-global
