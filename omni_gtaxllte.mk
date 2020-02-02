@@ -5,7 +5,7 @@ PRODUCT_RELEASE_NAME := gtaxllte
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 PRODUCT_PACKAGES += \
 	charger_res_images \
