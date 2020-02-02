@@ -12,7 +12,8 @@ jobs:
       CODENAME: 'gtaxllte'
       BUILD_LUNCH: 'omni_gtaxllte-userdebug'
       TEST_BUILD: 'true'
-      EXTRA_CMD: # some required commands like `ls` after `repo sync`, write in single line
+      # PB_OFFICIAL: 'true'
+      # EXTRA_CMD: # some required commands like `ls` after `repo sync`, write in single line
     working_directory: /home/builder/pitchblack
     steps:
       - checkout
