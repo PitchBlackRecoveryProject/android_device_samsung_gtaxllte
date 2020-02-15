@@ -19,13 +19,13 @@ PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/samsung/gtaxlwifi/Image
+LOCAL_KERNEL := device/samsung/gtaxllte/Image
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
 ifeq ($(TARGET_PREBUILT_DTB),)
-LOCAL_KERNEL_DTB := device/samsung/gtaxlwifi/dtb.img
+LOCAL_KERNEL_DTB := device/samsung/gtaxllte/dtb.img
 else
 LOCAL_KERNEL_DTB := $(TARGET_PREBUILT_DTB)
 endif
