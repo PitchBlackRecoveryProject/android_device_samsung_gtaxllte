@@ -5,7 +5,7 @@ jobs:
       # new standalone docker container
       - image: fr3akyphantom/droid-builder:latest
     environment:
-      MANIFEST_BRANCH: 'twrp-9.0'
+      MANIFEST_BRANCH: 'android-9.0'
       # PBRP_BRANCH: optional, if not default 'android-9.0', define other bootable_recovery branch
       VERSION: '2.9.0' # as of now, the current PBRP version
       VENDOR: 'samsung'
